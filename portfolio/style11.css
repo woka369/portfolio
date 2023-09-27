@@ -149,8 +149,32 @@ footer{
     color: white;
     font-size: 20px;
     padding: 15px;
-  }
-    
+}
+
+@media (max-width: 479px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    nav li {
+        margin: 0 10px;
+    }
+    .avatar img{ 
+        width: 150px;
+    }
+    nav .menu{
+        display: none;
+
+    }
+
+
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -180,92 +204,4 @@ footer{
         
     }
 }
-
-
-@media (max-width:480px){
-    nav a{
-        font-size: 18px;
-        
-    }
-    .mostrar-menu,
-
-    .esconder-menu{
-
-        display: block;
-
-    }
-}
-
- 
-
-    .menu{
-
-        position: fixed;
-
-        background-color:  rgb(255, 158, 194,0.95);
-
-        height:359px;
-
-        right: -100%;
-
-        top:0;
-
-        text-align: center;
-
-        padding: 100px 0px;
-
-        z-index: 100;
-
-        transition: 0.5s;
-
-        border-bottom-left-radius: 44px;
-
-    }
-
- 
-
-    .menu a{
-
-        display: block;
-
-        padding: 20px ;
-
-    }
-
     
-
-    .esconder-menu{
-
-        position: absolute;
-
-        top: 40px;
-
-        right: 40px;
-
-    }
-
- 
-
-    #check:checked ~ .menu{
-
-        right: 0;
-
-    }
-
- 
-
-    .menu a:hover,
-
-    .mostrar-menu,
-
-    .esconder-menu{
-
-    background-color: rgba(235, 235, 235, 0);
-
-    font-size: 30px;
-
-    }
-
-
-
-*/
